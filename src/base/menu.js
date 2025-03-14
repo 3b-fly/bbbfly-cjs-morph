@@ -30,7 +30,7 @@ bbbfly.morph.menu._onGetCheckImg = function(menu,item){
  *
  * @inpackage menu
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Menu.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */

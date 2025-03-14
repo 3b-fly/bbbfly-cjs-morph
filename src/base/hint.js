@@ -34,7 +34,7 @@ bbbfly.morph.hint._doUpdate = function(node){
  *
  * @inpackage hint
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.TextHint.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  *

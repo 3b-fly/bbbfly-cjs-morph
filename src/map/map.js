@@ -21,7 +21,7 @@ bbbfly.morph.map = bbbfly.morph.map || {};
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapBox.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -75,7 +75,7 @@ bbbfly.morph.MapBox = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapSideBar.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -130,7 +130,7 @@ bbbfly.morph.MapSideBar = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapZoomSlider.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -179,7 +179,7 @@ bbbfly.morph.MapZoomSlider = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapCopyrights.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -232,7 +232,7 @@ bbbfly.morph.MapCopyrights = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapDrawBar.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -273,7 +273,7 @@ bbbfly.morph.MapDrawBar = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapLayers.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -316,7 +316,7 @@ bbbfly.morph.MapLayers = function(def,ref,parent){
  *
  * @inpackage map
  *
- * @param {object} [def=undefined] - Descendant definition
+ * @param {bbbfly.MapModeBar.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */

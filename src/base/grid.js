@@ -19,7 +19,7 @@ bbbfly.morph = bbbfly.morph || {};
  *
  * @inpackage grid
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Grid.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */

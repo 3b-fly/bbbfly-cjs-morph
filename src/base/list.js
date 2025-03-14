@@ -55,12 +55,12 @@ bbbfly.morph.checklist._onListClick = function(event){
 /**
  * @class
  * @type control
- * @extends bbbfly.ContentList
+ * @extends bbbfly.List
  * @implements bbbfly.Morph.Control
  *
  * @inpackage list
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.List.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -83,12 +83,12 @@ bbbfly.morph.ContentList = function(def,ref,parent){
 /**
  * @class
  * @type control
- * @extends bbbfly.ContentCheckList
+ * @extends bbbfly.morph.ContentList
  * @implements bbbfly.Morph.Control
  *
  * @inpackage list
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.List.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -106,12 +106,12 @@ bbbfly.morph.ContentCheckList = function(def,ref,parent){
 /**
  * @class
  * @type control
- * @extends bbbfly.ContentTreeList
+ * @extends bbbfly.morph.ContentList
  * @implements bbbfly.Morph.Control
  *
  * @inpackage list
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.List.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */

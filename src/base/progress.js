@@ -20,7 +20,7 @@ bbbfly.morph.progress = {};
  *
  * @inpackage progress
  *
- * @param {bbbfly.Edit.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.ProgressRing.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -38,7 +38,7 @@ bbbfly.morph.ProgressRing = function(def,ref,parent){
  *
  * @inpackage progress
  *
- * @param {ngControl.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.ProgressBar.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */

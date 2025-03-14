@@ -83,7 +83,7 @@ bbbfly.morph._fileUploader = function(def,ref,parent,className,type){
  *
  * @inpackage file
  *
- * @param {bbbfly.Frame.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.FileUploader.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -102,7 +102,7 @@ bbbfly.morph.FileUploader = function(def,ref,parent){
  *
  * @inpackage file
  *
- * @param {bbbfly.Frame.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.FileLoader.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
