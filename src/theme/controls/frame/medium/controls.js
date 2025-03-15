@@ -237,6 +237,22 @@ bbbfly.morph.theme.frame.medium.controls.ContentRadioButton = function(def,imgs)
 };
 
 /** @ignore */
+bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
+  ng_MergeDef(def,{
+    H:28,
+    Data: {
+      Frame: imgs.EditFrame.EditBox,
+      WrapperOptions: {
+        PaddingTop: 3,
+        PaddingBottom: 3,
+        PaddingLeft: 3,
+        PaddingRight: 3
+      }
+    }
+  });
+};
+
+/** @ignore */
 bbbfly.morph.theme.frame.medium.controls.ContentList = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
@@ -495,6 +511,10 @@ bbbfly.morph.theme.frame.medium.controls.SkinControl = function(def,imgs){
     break;
     case 'bbbfly.morph.ContentRadioButton':
       this.ContentRadioButton(def,imgs);
+    break;
+    //edit
+    case 'bbbfly.morph.EditBox':
+      this.EditBox(def,imgs);
     break;
     //list
     case 'bbbfly.morph.ContentList':

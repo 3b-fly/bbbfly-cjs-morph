@@ -219,6 +219,56 @@ bbbfly.morph.theme.frame.medium.images._buttonIcon = function(anchor,padding){
   return icons;
 };
 
+/** @ignore */
+bbbfly.morph.theme.frame.medium.images._editFrame = function(anchor){
+  var edit = {Img:'edit', Anchor:anchor};
+  var hEdit = {Img:'edit_h', Anchor:anchor};
+  var vEdit = {Img:'edit_v', Anchor:anchor};
+
+  return {
+    LeftTop: {
+      L:0, oL:30, SL:60, oSL:90, DL:120, DSL:150, T:0, W:3, H:3,
+      IL:180, oIL:210, ISL:240, oISL:270, DIL:300, DISL:330,
+      Src:edit
+    },
+    Top: {
+      T:0, oT:30, ST:60, oST:90, DT:120, DST:150, L:0, H:3,
+      IT:180, oIT:210, IST:240, oIST:270, DIT:300, DIST:330,
+      Src:hEdit
+    },
+    RightTop: {
+      L:25, oL:55, SL:85, oSL:115, DL:145, DSL:175, T:0, W:3, H:3,
+      IL:205, oIL:235, ISL:265, oISL:295, DIL:325, DISL:355,
+      Src:edit
+    },
+    Left: {
+      L:0, oL:30, SL:60, oSL:90, DL:120, DSL:150, T:0, W:3,
+      IL:180, oIL:210, ISL:240, oISL:270, DIL:300, DISL:330,
+      Src:vEdit
+    },
+    Right: {
+      L:25, oL:55, SL:85, oSL:115, DL:145, DSL:175, T:0, W:3,
+      IL:205, oIL:235, ISL:265, oISL:295, DIL:325, DISL:355,
+      Src:vEdit
+    },
+    LeftBottom: {
+      L:0, oL:30, SL:60, oSL:90, DL:120, DSL:150, T:25, W:3, H:3,
+      IL:180, oIL:210, ISL:240, oISL:270, DIL:300, DISL:330,
+      Src:edit
+    },
+    Bottom: {
+      T:25, oT:55, ST:85, oST:115, DT:145, DST:175, L:0, H:3,
+      IT:355, oIT:235, IST:265, oIST:295, DIT:325, DIST:355,
+      Src:hEdit
+    },
+    RightBottom: {
+      L:25, oL:55, SL:85, oSL:115, DL:145, DSL:175, T:25, W:3, H:3,
+      IL:205, oIL:235, ISL:265, oISL:295, DIL:325, DISL:355,
+      Src:edit
+    }
+  };
+};
+
 /**
  * @class
  * @hideconstructor
@@ -322,6 +372,24 @@ bbbfly.morph.theme.frame.medium.Images = {
           button_input: { L:1440, T:0 }
         }
       },
+      edit: {
+        Path: 'morph-medium-edit.png?2',
+        Anchors: {
+          edit_box: { L:0, T:0 }
+        }
+      },
+      edit_h: {
+        Path: 'morph-medium-edit_h.png?2',
+        Anchors: {
+          edit_box: { L:0, T:0 }
+        }
+      },
+      edit_v: {
+        Path: 'morph-medium-edit_v.png?2',
+        Anchors: {
+          edit_box: { L:0, T:0 }
+        }
+      },
       icon: {
         Path: 'morph-medium-icon.png?2',
         Anchors: {
@@ -395,6 +463,9 @@ bbbfly.morph.theme.frame.medium.Images = {
         Check: this.ButtonImage('button_check',4),
         Radio: this.ButtonImage('button_radio',3)
       },
+      EditFrame: {
+        EditBox: this.EditFrame('edit_box')
+      },
       Icon: {
         Button: this.ButtonIcon('misc')
       }
@@ -448,5 +519,7 @@ bbbfly.morph.theme.frame.medium.Images = {
   /** @private */
   ButtonImage: bbbfly.morph.theme.frame.medium.images._buttonImage,
   /** @private */
-  ButtonIcon: bbbfly.morph.theme.frame.medium.images._buttonIcon
+  ButtonIcon: bbbfly.morph.theme.frame.medium.images._buttonIcon,
+  /** @private */
+  EditFrame: bbbfly.morph.theme.frame.medium.images._editFrame,
 };
