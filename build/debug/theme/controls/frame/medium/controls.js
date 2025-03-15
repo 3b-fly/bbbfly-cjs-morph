@@ -1,7 +1,7 @@
 /*!
  * @author Jan Nejedly support@3b-fly.eu
  * @copyright Jan Nejedly
- * @version 1.0.2
+ * @version 1.0.3
  * @license see license in 'LICENSE' file
 */
 
@@ -188,6 +188,20 @@ bbbfly.morph.theme.frame.medium.controls.ContentCheckBox = function(def,imgs){
 bbbfly.morph.theme.frame.medium.controls.ContentRadioButton = function(def,imgs){
   ng_MergeDef(def,{
     Data: { Icon: imgs.Button.Radio }
+  });
+};
+bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
+  ng_MergeDef(def,{
+    H:28,
+    Data: {
+      Frame: imgs.EditFrame.EditBox,
+      WrapperOptions: {
+        PaddingTop: 3,
+        PaddingBottom: 3,
+        PaddingLeft: 3,
+        PaddingRight: 3
+      }
+    }
   });
 };
 bbbfly.morph.theme.frame.medium.controls.ContentList = function(def,imgs){
@@ -415,6 +429,9 @@ bbbfly.morph.theme.frame.medium.controls.SkinControl = function(def,imgs){
     break;
     case 'bbbfly.morph.ContentRadioButton':
       this.ContentRadioButton(def,imgs);
+    break;
+    case 'bbbfly.morph.EditBox':
+      this.EditBox(def,imgs);
     break;
     case 'bbbfly.morph.ContentList':
       this.ContentList(def,imgs);

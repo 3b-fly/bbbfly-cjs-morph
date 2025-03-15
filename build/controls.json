@@ -1,12 +1,12 @@
 {
   "Lib": "bbbfly-cjs-morph",
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "Name": "3b-fly's skin base for Controls.js",
   "Copyright": "Jan Nejedly",
   "RequiredLibraries": {
     "controls.js": "5.0.0",
     "bbbfly-cjs": "2.0.1",
-    "bbbfly-cjs-controls": "2.0.0"
+    "bbbfly-cjs-controls": "2.0.1"
   },
   "Packages": {
     "core": {
@@ -200,6 +200,32 @@
         "bbbfly-cjs-controls": {
           "Packages": [
             "button"
+          ]
+        },
+        "bbbfly-cjs-morph": {
+          "Packages": [
+            "core",
+            "hint"
+          ]
+        }
+      }
+    },
+    "edit": {
+      "DebugFiles": [
+        "debug/base/edit.js"
+      ],
+      "ReleaseFiles": [
+        "release/base/edit.js"
+      ],
+      "Libraries": {
+        "controls.js": {
+          "Packages": [
+            "Controls.js"
+          ]
+        },
+        "bbbfly-cjs-controls": {
+          "Packages": [
+            "edit"
           ]
         },
         "bbbfly-cjs-morph": {

@@ -7,25 +7,25 @@
 
 var bbbfly = bbbfly || {};
 bbbfly.morph = bbbfly.morph || {};
-bbbfly.morph.HTMLContentFrame = function(def,ref,parent){
+bbbfly.morph.EditBox = function(def,ref,parent){
   def = def || {};
 
   ng_MergeDef(def,{
-    ControlsPanel: {
-      Data: {
-        OverflowY: bbbfly.Renderer.overflow.auto
+    Data: {
+      HintDef: {
+        Type: 'bbbfly.morph.TextHint'
       }
     }
   });
 
-  bbbfly.morph.misc.ApplyControlClassName(def,'HTMLContentFrame');
-  return ngCreateControlAsType(def,'bbbfly.Frame',ref,parent);
+  bbbfly.morph.misc.ApplyControlClassName(def,'EditBox');
+  return ngCreateControlAsType(def,'bbbfly.EditBox',ref,parent);
 };
 ngUserControls = ngUserControls || new Array();
-ngUserControls['bbbfly_morph_html'] = {
+ngUserControls['bbbfly_morph_edit'] = {
   OnInit: function(){
     bbbfly.Morph.RegisterControlType(
-      'bbbfly.morph.HTMLContentFrame',bbbfly.morph.HTMLContentFrame
+      'bbbfly.morph.EditBox',bbbfly.morph.EditBox
     );
   }
 };

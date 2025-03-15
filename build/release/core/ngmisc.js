@@ -1,7 +1,7 @@
 /*!
  * @author Jan Nejedly support@3b-fly.eu
  * @copyright Jan Nejedly
- * @version 1.0.2
+ * @version 1.0.3
  * @license see license in 'LICENSE' file
 */
 
