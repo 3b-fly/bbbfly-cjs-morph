@@ -209,6 +209,7 @@ bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
     H:28,
     Data: {
       Frame: imgs.EditFrame.EditBox,
+
       WrapperOptions: {
         PaddingLeft: 3,
         PaddingRight: 3

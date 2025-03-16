@@ -168,7 +168,7 @@ bbbfly.morph.theme.frame.medium.images._buttonFrame = function(anchor){
     },
     Bottom: {
       T:25, oT:55, ST:85, oST:115, DT:145, DST:175, L:0, H:3,
-      IT:355, oIT:235, IST:265, oIST:295, DIT:325, DIST:355,
+      IT:205, oIT:235, IST:265, oIST:295, DIT:325, DIST:355,
       Src:hButton
     },
     RightBottom: {
@@ -258,7 +258,7 @@ bbbfly.morph.theme.frame.medium.images._editFrame = function(anchor){
     },
     Bottom: {
       T:25, oT:55, ST:85, oST:115, DT:145, DST:175, L:0, H:3,
-      IT:355, oIT:235, IST:265, oIST:295, DIT:325, DIST:355,
+      IT:205, oIT:235, IST:265, oIST:295, DIT:325, DIST:355,
       Src:hEdit
     },
     RightBottom: {
