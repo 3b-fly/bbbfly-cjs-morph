@@ -467,7 +467,8 @@ bbbfly.morph.theme.frame.medium.Images = {
         EditBox: this.EditFrame('edit_box')
       },
       Icon: {
-        Button: this.ButtonIcon('misc')
+        Button: this.ButtonIcon('misc'),
+        Edit: this.ButtonIcon('misc',3)
       }
     };
   },

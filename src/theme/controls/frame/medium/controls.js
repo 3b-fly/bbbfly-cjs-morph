@@ -74,6 +74,22 @@ bbbfly.morph.theme.frame.medium.controls.ApplyBtnIcon = function(def,imgs){
 };
 
 /** @ignore */
+bbbfly.morph.theme.frame.medium.controls.ApplyEditBtnIcon = function(def,imgs){
+  ng_MergeDef(def,{
+    Data: {
+      ButtonDef: {
+        Data: {
+          _IconRefs: imgs.Icon.Edit
+        },
+        Methods: {
+          GetIcon: bbbfly.morph.theme.frame.medium.controls._getButtonIcon
+        }
+      }
+    }
+  });
+};
+
+/** @ignore */
 bbbfly.morph.theme.frame.medium.controls.ContentFrame = function(def,imgs){
   ng_MergeDef(def,{
     Data: { Frame: imgs.Frame.Outer }
@@ -242,14 +258,15 @@ bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
     H:28,
     Data: {
       Frame: imgs.EditFrame.EditBox,
+
       WrapperOptions: {
-        PaddingTop: 3,
-        PaddingBottom: 3,
         PaddingLeft: 3,
         PaddingRight: 3
       }
     }
   });
+
+  this.ApplyEditBtnIcon(def,imgs);
 };
 
 /** @ignore */
