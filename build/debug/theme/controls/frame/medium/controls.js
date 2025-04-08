@@ -214,6 +214,15 @@ bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
         PaddingLeft: 3,
         PaddingRight: 3
       }
+    },
+    InputPanel: {
+      T:0,B:0,
+      Data: {
+        WrapOptions: {
+          MarginLeft: 3,
+          MarginRight: 3
+        }
+      }
     }
   });
 
