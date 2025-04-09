@@ -15,6 +15,8 @@ bbbfly.morph.hint = {};
 
 /** @ignore */
 bbbfly.morph.hint._doUpdate = function(node){
+  if(!this.DoUpdate.callParent(node)){return false;}
+
   if(node instanceof HTMLElement){
     if(String.isString(this.HintType)){
       node.setAttribute('type',this.HintType);
@@ -23,7 +25,7 @@ bbbfly.morph.hint._doUpdate = function(node){
       node.removeAttribute('type');
     }
   }
-  this.DoUpdate.callParent(node);
+  return true;
 };
 
 /**
