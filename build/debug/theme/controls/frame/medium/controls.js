@@ -75,12 +75,12 @@ bbbfly.morph.theme.frame.medium.controls.ApplyEditBtnIcon = function(def,imgs){
 };
 bbbfly.morph.theme.frame.medium.controls.ContentFrame = function(def,imgs){
   ng_MergeDef(def,{
-    Data: { Frame: imgs.Frame.Outer }
+    Data: { Frame: imgs.Frame.Panel.Outer }
   });
 };
 bbbfly.morph.theme.frame.medium.controls.InputFrame = function(def,imgs){
   ng_MergeDef(def,{
-    Data: { Frame: imgs.Frame.Inner }
+    Data: { Frame: imgs.Frame.Panel.Inner }
   });
 };
 bbbfly.morph.theme.frame.medium.controls.ContentSeparator = function(def,imgs){
@@ -108,7 +108,7 @@ bbbfly.morph.theme.frame.medium.controls.ProgressRing = function(def,imgs){
 bbbfly.morph.theme.frame.medium.controls.ProgressBar = function(def,imgs){
   ng_MergeDef(def,{
     H:10,
-    Data: { Frame: imgs.Frame.Inner },
+    Data: { Frame: imgs.Frame.Panel.Inner },
     Controls: {
       Indicator: { T:0, B:0 }
     }
@@ -228,10 +228,31 @@ bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
 
   this.ApplyEditBtnIcon(def,imgs);
 };
+bbbfly.morph.theme.frame.medium.controls.DropDownBox = function(def,imgs){ //TODO
+  ng_MergeDef(def,{
+    DropDownPanel: {
+      Data: {
+        Frame: imgs.Frame.Inverse.Outer
+      }
+    },
+    Buttons: {
+      DropDown: {
+        Data: {
+          Icon: imgs.Image.Edit.DropDown,
+          WrapOptions: {
+            Float: bbbfly.Wrapper.float.right
+          }
+        }
+      }
+    }
+  });
+
+  this.EditBox(def,imgs);
+};
 bbbfly.morph.theme.frame.medium.controls.ContentList = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
-      Frame: imgs.Frame.Inner,
+      Frame: imgs.Frame.Panel.Inner,
       CheckImg: imgs.Image.List.Check,
 
       ListIndent: 0,
@@ -247,7 +268,7 @@ bbbfly.morph.theme.frame.medium.controls.ContentTreeList = function(def,imgs){
 bbbfly.morph.theme.frame.medium.controls.PopupMenu = function(def,imgs){
   ng_MergeDef(def,{
     Data: {
-      Frame: imgs.Frame.Outer,
+      Frame: imgs.Frame.Panel.Outer,
       SubMenuImg: imgs.Image.Menu.SubMenu,
       CheckImg: imgs.Image.Menu.Check
     }
@@ -257,7 +278,7 @@ bbbfly.morph.theme.frame.medium.controls.MapBox = function(def,imgs){
 
   ng_MergeDef(def,{
     Data: {
-      Frame: imgs.Frame.Inner
+      Frame: imgs.Frame.Panel.Inner
     },
     ModifyControls: {
       Copyrights:{
@@ -309,7 +330,7 @@ bbbfly.morph.theme.frame.medium.controls.MapZoomSlider = function(def,imgs){
           Rail: {
             L:'50%',W:6,T:10,B:10,
             style: { marginLeft: '-3px' },
-            Data: { Frame: imgs.Frame.Inner }
+            Data: { Frame: imgs.Frame.Panel.Inner }
           },
           Handle: {
             L:'50%',W:24,H:8,
@@ -456,6 +477,9 @@ bbbfly.morph.theme.frame.medium.controls.SkinControl = function(def,imgs){
     break;
     case 'bbbfly.morph.EditBox':
       this.EditBox(def,imgs);
+    break;
+    case 'bbbfly.morph.DropDownBox':
+      this.DropDownBox(def,imgs);
     break;
     case 'bbbfly.morph.ContentList':
       this.ContentList(def,imgs);

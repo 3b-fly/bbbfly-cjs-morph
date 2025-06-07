@@ -305,12 +305,14 @@ bbbfly.morph.theme.frame.medium.Images = {
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:0, T:30 },
-          frame_outer: { L:0, T:60 },
-          frame_inner: { L:0, T:90 },
-          frame_hint_warn: { L:0, T:120 },
-          frame_hint_error: { L:0, T:150 },
-          frame_hint_submit: { L:0, T:180 },
-          frame_hint_info: { L:0, T:210 }
+          frame_panel_outer: { L:0, T:60 },
+          frame_panel_inner: { L:0, T:90 },
+          frame_inverse_outer: { L:0, T:120 },
+          frame_inverse_inner: { L:0, T:150 },
+          frame_hint_warn: { L:0, T:180 },
+          frame_hint_error: { L:0, T:210 },
+          frame_hint_submit: { L:0, T:240 },
+          frame_hint_info: { L:0, T:270 }
         }
       },
       frame_h: {
@@ -318,12 +320,14 @@ bbbfly.morph.theme.frame.medium.Images = {
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:0, T:10 },
-          frame_outer: { L:0, T:20 },
-          frame_inner: { L:0, T:80 },
-          frame_hint_warn: { L:0, T:140 },
-          frame_hint_error: { L:0, T:200 },
-          frame_hint_submit: { L:0, T:260 },
-          frame_hint_info: { L:0, T:320 }
+          frame_panel_outer: { L:0, T:20 },
+          frame_panel_inner: { L:0, T:80 },
+          frame_inverse_outer: { L:0, T:140 },
+          frame_inverse_inner: { L:0, T:200 },
+          frame_hint_warn: { L:0, T:260 },
+          frame_hint_error: { L:0, T:320 },
+          frame_hint_submit: { L:0, T:380 },
+          frame_hint_info: { L:0, T:440 }
         }
       },
       frame_v: {
@@ -331,12 +335,14 @@ bbbfly.morph.theme.frame.medium.Images = {
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:10, T:0 },
-          frame_outer: { L:20, T:0 },
-          frame_inner: { L:80, T:0 },
-          frame_hint_warn: { L:140, T:0 },
-          frame_hint_error: { L:200, T:0 },
-          frame_hint_submit: { L:260, T:0 },
-          frame_hint_info: { L:320, T:0 }
+          frame_panel_outer: { L:20, T:0 },
+          frame_panel_inner: { L:80, T:0 },
+          frame_inverse_outer: { L:140, T:0 },
+          frame_inverse_inner: { L:200, T:0 },
+          frame_hint_warn: { L:260, T:0 },
+          frame_hint_error: { L:320, T:0 },
+          frame_hint_submit: { L:380, T:0 },
+          frame_hint_info: { L:440, T:0 }
         }
       },
       button: {
@@ -412,7 +418,7 @@ bbbfly.morph.theme.frame.medium.Images = {
           SubMenu: this.Image('menu_sub',{L:4,R:4,T:2,B:2})
         },
         Edit: {
-          DropDown: this.Image('edit_drop')
+          DropDown: this.Image('edit_drop',{L:3,R:3,T:3,B:3})
         }
       },
       Line: {
@@ -426,8 +432,14 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       Frame: {
-        Outer: this.PanelFrame('frame_outer'),
-        Inner: this.PanelFrame('frame_inner')
+        Panel: {
+          Outer: this.PanelFrame('frame_panel_outer'),
+          Inner: this.PanelFrame('frame_panel_inner'),
+        },
+        Inverse: {
+          Outer: this.PanelFrame('frame_inverse_outer'),
+          Inner: this.PanelFrame('frame_inverse_inner')
+        }
       },
       HintFrame: {
         Frame: {
