@@ -27,18 +27,6 @@ bbbfly.morph.PanelButton = function(def,ref,parent){
 bbbfly.morph.InverseButton = function(def,ref,parent){
   return bbbfly.morph.Button(def,ref,parent,'InverseButton');
 };
-bbbfly.morph.ContentButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentButton');
-};
-bbbfly.morph.LargeContentButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'LargeContentButton');
-};
-bbbfly.morph.ContentFlatButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentFlatButton');
-};
-bbbfly.morph.ContentInputButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentInputButton');
-};
 bbbfly.morph.PanelIconButton = function(def,ref,parent){
   def = def || {};
 
@@ -50,6 +38,18 @@ bbbfly.morph.PanelIconButton = function(def,ref,parent){
   });
 
   return bbbfly.morph.Button(def,ref,parent,'PanelIconButton');
+};
+bbbfly.morph.ContentButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentButton');
+};
+bbbfly.morph.LargeContentButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'LargeContentButton');
+};
+bbbfly.morph.ContentFlatButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentFlatButton');
+};
+bbbfly.morph.ContentInputButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentInputButton');
 };
 bbbfly.morph.ContentIconButton = function(def,ref,parent){
   def = def || {};
@@ -99,6 +99,9 @@ ngUserControls['bbbfly_morph_button'] = {
       'bbbfly.morph.InverseButton',bbbfly.morph.InverseButton
     );
     bbbfly.Morph.RegisterControlType(
+      'bbbfly.morph.PanelIconButton',bbbfly.morph.PanelIconButton
+    );
+    bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentButton',bbbfly.morph.ContentButton
     );
     bbbfly.Morph.RegisterControlType(
@@ -106,9 +109,6 @@ ngUserControls['bbbfly_morph_button'] = {
     );
     bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentFlatButton',bbbfly.morph.ContentFlatButton
-    );
-    bbbfly.Morph.RegisterControlType(
-      'bbbfly.morph.PanelIconButton',bbbfly.morph.PanelIconButton
     );
     bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentInputButton',bbbfly.morph.ContentInputButton

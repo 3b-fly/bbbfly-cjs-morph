@@ -35,7 +35,7 @@ bbbfly.morph.Button = function(def,ref,parent,className){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -51,7 +51,7 @@ bbbfly.morph.PanelButton = function(def,ref,parent){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -67,71 +67,7 @@ bbbfly.morph.InverseButton = function(def,ref,parent){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
- * @param {object} [ref=undefined] - Reference owner
- * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
- */
-bbbfly.morph.ContentButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentButton');
-};
-
-/**
- * @class
- * @type control
- * @extends bbbfly.Button
- * @implements bbbfly.Morph.Control
- *
- * @inpackage button
- *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
- * @param {object} [ref=undefined] - Reference owner
- * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
- */
-bbbfly.morph.LargeContentButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'LargeContentButton');
-};
-
-/**
- * @class
- * @type control
- * @extends bbbfly.Button
- * @implements bbbfly.Morph.Control
- *
- * @inpackage button
- *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
- * @param {object} [ref=undefined] - Reference owner
- * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
- */
-bbbfly.morph.ContentFlatButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentFlatButton');
-};
-
-/**
- * @class
- * @type control
- * @extends bbbfly.Button
- * @implements bbbfly.Morph.Control
- *
- * @inpackage button
- *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
- * @param {object} [ref=undefined] - Reference owner
- * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
- */
-bbbfly.morph.ContentInputButton = function(def,ref,parent){
-  return bbbfly.morph.Button(def,ref,parent,'ContentInputButton');
-};
-
-/**
- * @class
- * @type control
- * @extends bbbfly.Button
- * @implements bbbfly.Morph.Control
- *
- * @inpackage button
- *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -148,6 +84,7 @@ bbbfly.morph.PanelIconButton = function(def,ref,parent){
   return bbbfly.morph.Button(def,ref,parent,'PanelIconButton');
 };
 
+
 /**
  * @class
  * @type control
@@ -156,7 +93,71 @@ bbbfly.morph.PanelIconButton = function(def,ref,parent){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
+ * @param {object} [ref=undefined] - Reference owner
+ * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
+ */
+bbbfly.morph.ContentButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentButton');
+};
+
+/**
+ * @class
+ * @type control
+ * @extends bbbfly.Button
+ * @implements bbbfly.Morph.Control
+ *
+ * @inpackage button
+ *
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
+ * @param {object} [ref=undefined] - Reference owner
+ * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
+ */
+bbbfly.morph.LargeContentButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'LargeContentButton');
+};
+
+/**
+ * @class
+ * @type control
+ * @extends bbbfly.Button
+ * @implements bbbfly.Morph.Control
+ *
+ * @inpackage button
+ *
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
+ * @param {object} [ref=undefined] - Reference owner
+ * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
+ */
+bbbfly.morph.ContentFlatButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentFlatButton');
+};
+
+/**
+ * @class
+ * @type control
+ * @extends bbbfly.Button
+ * @implements bbbfly.Morph.Control
+ *
+ * @inpackage button
+ *
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
+ * @param {object} [ref=undefined] - Reference owner
+ * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
+ */
+bbbfly.morph.ContentInputButton = function(def,ref,parent){
+  return bbbfly.morph.Button(def,ref,parent,'ContentInputButton');
+};
+
+/**
+ * @class
+ * @type control
+ * @extends bbbfly.Button
+ * @implements bbbfly.Morph.Control
+ *
+ * @inpackage button
+ *
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -181,7 +182,7 @@ bbbfly.morph.ContentIconButton = function(def,ref,parent){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -207,7 +208,7 @@ bbbfly.morph.ContentCheckBox = function(def,ref,parent){
  *
  * @inpackage button
  *
- * @param {bbbfly.Panel.Definition} [def=undefined] - Descendant definition
+ * @param {bbbfly.Button.Definition} [def=undefined] - Descendant definition
  * @param {object} [ref=undefined] - Reference owner
  * @param {object|string} [parent=undefined] - Parent DIV element or it's ID
  */
@@ -236,6 +237,9 @@ ngUserControls['bbbfly_morph_button'] = {
       'bbbfly.morph.InverseButton',bbbfly.morph.InverseButton
     );
     bbbfly.Morph.RegisterControlType(
+      'bbbfly.morph.PanelIconButton',bbbfly.morph.PanelIconButton
+    );
+    bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentButton',bbbfly.morph.ContentButton
     );
     bbbfly.Morph.RegisterControlType(
@@ -243,9 +247,6 @@ ngUserControls['bbbfly_morph_button'] = {
     );
     bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentFlatButton',bbbfly.morph.ContentFlatButton
-    );
-    bbbfly.Morph.RegisterControlType(
-      'bbbfly.morph.PanelIconButton',bbbfly.morph.PanelIconButton
     );
     bbbfly.Morph.RegisterControlType(
       'bbbfly.morph.ContentInputButton',bbbfly.morph.ContentInputButton
