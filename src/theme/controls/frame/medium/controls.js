@@ -279,9 +279,9 @@ bbbfly.morph.theme.frame.medium.controls.EditBox = function(def,imgs){
 };
 
 /** @ignore */
-bbbfly.morph.theme.frame.medium.controls.DropDownBox = function(def,imgs){ //TODO
+bbbfly.morph.theme.frame.medium.controls.DropDownBox = function(def,imgs){
   ng_MergeDef(def,{
-    DropDownPanel: {
+    DropDown: {
       Data: {
         Frame: imgs.Frame.Inverse.Outer
       }
