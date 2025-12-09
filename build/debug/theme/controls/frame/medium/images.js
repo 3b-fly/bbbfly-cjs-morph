@@ -242,7 +242,7 @@ bbbfly.morph.theme.frame.medium.Images = {
   Sources: function(){
     return {
       image: {
-        Path: 'morph-medium-image.png?2',
+        Path: 'morph-medium-image.png?3',
         Anchors: {
           list_check: { L:0, T:0 },
           list_tree: { L:0, T:30 },
@@ -253,13 +253,13 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       progress: {
-        Path: 'morph-medium-progress.gif?2',
+        Path: 'morph-medium-progress.gif?3',
         Anchors: {
           ring: { L:0, T:0 }
         }
       },
       frame: {
-        Path: 'morph-medium-frame.png?2',
+        Path: 'morph-medium-frame.png?3',
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:0, T:30 },
@@ -274,7 +274,7 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       frame_h: {
-        Path: 'morph-medium-frame_h.png?2',
+        Path: 'morph-medium-frame_h.png?3',
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:0, T:10 },
@@ -289,7 +289,7 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       frame_v: {
-        Path: 'morph-medium-frame_v.png?2',
+        Path: 'morph-medium-frame_v.png?3',
         Anchors: {
           line_outer: { L:0, T:0 },
           line_inner: { L:10, T:0 },
@@ -304,7 +304,7 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       button: {
-        Path: 'morph-medium-button.png?2',
+        Path: 'morph-medium-button.png?3',
         Anchors: {
           button_panel: { L:0, T:0 },
           button_inverse: { L:0, T:30 },
@@ -317,7 +317,7 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       button_h: {
-        Path: 'morph-medium-button_h.png?2',
+        Path: 'morph-medium-button_h.png?3',
         Anchors: {
           button_panel: { L:0, T:0 },
           button_inverse: { L:0, T:360 },
@@ -327,7 +327,7 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       button_v: {
-        Path: 'morph-medium-button_v.png?2',
+        Path: 'morph-medium-button_v.png?3',
         Anchors: {
           button_panel: { L:0, T:0 },
           button_inverse: { L:360, T:0 },
@@ -337,25 +337,25 @@ bbbfly.morph.theme.frame.medium.Images = {
         }
       },
       edit: {
-        Path: 'morph-medium-edit.png?2',
+        Path: 'morph-medium-edit.png?3',
         Anchors: {
           edit_box: { L:0, T:0 }
         }
       },
       edit_h: {
-        Path: 'morph-medium-edit_h.png?2',
+        Path: 'morph-medium-edit_h.png?3',
         Anchors: {
           edit_box: { L:0, T:0 }
         }
       },
       edit_v: {
-        Path: 'morph-medium-edit_v.png?2',
+        Path: 'morph-medium-edit_v.png?3',
         Anchors: {
           edit_box: { L:0, T:0 }
         }
       },
       icon: {
-        Path: 'morph-medium-icon.png?2',
+        Path: 'morph-medium-icon.png?3',
         Anchors: {
           misc: { L:0, T:0 }
         }
